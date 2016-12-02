@@ -1,5 +1,5 @@
 import cp from 'child_process';
-const spawn = cp.spawn('python', ['hello_world.py']);
+const spawn = cp.spawn('python', ['pyScripts/hello_world.py']);
 let string = '';
 let error = '';
 
