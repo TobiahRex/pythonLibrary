@@ -2,8 +2,7 @@ import cp from 'child_process';
 import path from 'path';
 import fs from 'fs';
 
-console.log(path.resolve('pyScripts/hello_world.py'));
-const spawn = cp.spawn('python', ['hello_world.py']);
+const spawn = cp.spawn('python', ['pyScripts/forLoop.py']);
 let string = '';
 let error = '';
 
