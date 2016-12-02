@@ -1,2 +1,2 @@
-import sys
-print (sys.version)
+import math
+math.sqrt(81)

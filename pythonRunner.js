@@ -12,4 +12,4 @@ spawn.stderr.on('data', (err) => {
   console.log('error: ', error)
 });
 
-spawn.on('close', (code) => console.log('string: ', string));
+spawn.on('close', (code) => console.log('result: \n', string));
