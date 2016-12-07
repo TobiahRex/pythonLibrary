@@ -2,7 +2,7 @@ import cp from 'child_process';
 import path from 'path';
 import fs from 'fs';
 
-const spawn = cp.spawn('python', ['pyScripts/math.py']);
+const spawn = cp.spawn('python', ['pyScripts/loops.py']);
 let string = '';
 let error = '';
 
