@@ -20,6 +20,10 @@ while True:
 
 # ----------- for loop with "continue" statement -----------
 print '\n'
-xrange(10)
+xrange = [1,2,3,4,5]
 for x in xrange:
+    # Check if x is even
+    if x % 2 == 0:
+        continue
+        # "continue" is used to skip over the current iteration.
     print x
