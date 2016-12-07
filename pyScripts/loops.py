@@ -21,4 +21,5 @@ while True:
 # ----------- for loop with "continue" statement -----------
 print '\n'
 xrange(10)
-print xrange
+for x in xrange:
+    print x
