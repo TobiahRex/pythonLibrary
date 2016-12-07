@@ -9,7 +9,7 @@ for x in xnumbers:
      print x
 # this is going to throw an error for pyton 3 because xnumbers is not defined.
 
-# ----------- while loop -----------
+# ----------- while loop with "break" statement -----------
 count = 0
 print '\n'
 while True:
@@ -17,3 +17,8 @@ while True:
     count += 1
     if count >= 5:
         break
+
+# ----------- for loop with "continue" statement -----------
+print '\n'
+xrange(10)
+print xrange
