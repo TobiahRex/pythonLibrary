@@ -2,7 +2,7 @@ import cp from 'child_process';
 import path from 'path';
 import fs from 'fs';
 
-const spawn = cp.spawn('python', ['pyScripts/printSandbox.py']);
+const spawn = cp.spawn('python', ['pyScripts/binaryNhex.py']);
 let string = '';
 let error = '';
 
