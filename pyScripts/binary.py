@@ -1,1 +1,1 @@
-print 0b10
+print ('binary: ' 0b10)
