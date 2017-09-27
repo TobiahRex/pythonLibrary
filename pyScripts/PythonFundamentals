@@ -1,0 +1,4 @@
+# # ----------- for loop -----------
+primes = [ 2, 3, 5, 7, 9 ]
+for prime in primes:
+    print prime
