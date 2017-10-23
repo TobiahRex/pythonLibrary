@@ -1,17 +1,32 @@
-import cp from 'child_process';
-import path from 'path';
-import fs from 'fs';
+import { spawn, exec } from 'child_process';
+import colors from 'colors';
 
-const spawn = cp.spawn('python', ['pyScripts/binaryNhex.py']);
-let string = '';
-let error = '';
-
-spawn.stdout.on('data', (data) => (string += data));
-spawn.stderr.on('data', (err) => {
-  error += err;
-  console.log('error: ', error)
+exec(
+  'python pyScripts/arrays.py',
+  // 'python algos/python/rota.py',
+  (err, data) => {
+  if (err) {
+      process.stdout.write('\n');
+      process.stdout.write(`❌  ${err}
+  `.red);
+      throw err;
+    } else {
+      process.stdout.write('\n');
+      process.stdout.write(data.bold.green);
+      process.stdout.write('\n');
+    }
 });
 
-spawn.on('close', (code) => {
-  console.log('result: \n', string)
-});
+// const py = spawn('python', ['pyScripts/binaryNhex.py']);
+// let string = '';
+// let error = '';
+//
+// py.stdout.on('data', (data) => (string += data));
+// py.stderr.on('data', (err) => {
+//   error += err;
+//   console.log('error: ', error)
+// });
+//
+// py.on('close', (code) => {
+//   console.log('result: \n', string)
+// });
