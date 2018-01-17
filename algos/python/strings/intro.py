@@ -6,4 +6,8 @@ embedControlChars = 'this is\n a multiline\nstring.'
 
 bothTypes = 'this is appears :\' & this also appears: \"'
 
-print(bothTypes)
+rawStrings = r'\usr\local\bin:' #\usr\local\bin:
+
+capString = 'toby'.capitalize();
+
+print(rawStrings)
