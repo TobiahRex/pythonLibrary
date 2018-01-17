@@ -1,6 +1,8 @@
-def rota(rooms):
-    while (len(rooms) < 7):
-        rooms += rooms
-    return rooms
+def rota(inputRooms):
+    while (len(inputRooms) < 7):
+        inputRooms += inputRooms
+
+    rooms = inputRooms[:7]
+    
 
 print(rota(['one', 'two', 'three']))
