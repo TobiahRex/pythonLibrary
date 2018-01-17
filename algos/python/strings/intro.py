@@ -2,4 +2,8 @@ multiLine = """This
 is a
 multi-line string"""
 
-print(multiLine)
+embedControlChars = 'this is\n a multiline\nstring.'
+
+bothTypes = 'this is appears :\' & this also appears: \"'
+
+print(bothTypes)
