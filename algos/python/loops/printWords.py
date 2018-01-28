@@ -1,3 +1,4 @@
+#!/usr/bin/env Python3
 '''Fetch and print text from a url.
 
 Usage:
@@ -44,5 +45,5 @@ def main(url):
 
 
 if __name__ == '__main__':
-    url = sys.argv[1]
+    url = sys.argv[1] # The 0th arg is the module filename.
     main(url)
