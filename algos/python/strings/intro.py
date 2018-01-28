@@ -16,6 +16,6 @@ sCenter = 'toby'.center(100); #   toby
 
 sCount = 'aaabbbccc'.count('a', 2); # 1
 
-sEncode = base64.b64encode(b'tobiah rex') #Prefixing the string with (b) is required for python 3.6 | python 2 does not require the (b) prefix.
+sEncode = base64.b64encode(b'tobiah rex') #{byte} prefix (b) is required for python 3.6 | python 2 does not require the (b) prefix.
 
 print(sEncode)

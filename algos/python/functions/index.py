@@ -28,7 +28,7 @@ def exp2():
             'f3': lambda: 'default',
         }
 
-        func = switcher.get(a, lambda: 'nothing');
+        func = switcher.get(a, lambda: 'nothing'); # NOTE what does Lambda mean?
         func(z);
 
     run('f1', { 'name': 'Toby' });
