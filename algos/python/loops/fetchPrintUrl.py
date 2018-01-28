@@ -2,7 +2,6 @@ from urllib.request import urlopen
 
 def fetch():
     with urlopen('http://sixty-north.com/c/t.txt') as story:
-        print(story)
         story_words = [];
         for line in story:
             line_words = line.decode('utf-8').split();
