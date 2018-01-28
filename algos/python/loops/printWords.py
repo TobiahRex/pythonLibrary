@@ -24,13 +24,13 @@ def fetch(url):                                 #'http://sixty-north.com/c/t.txt
         return story_words
 
 
-def print_words(items):
+def print_words(words):
     '''Print list of words as a single spaced, single line string.
 
     Args:
-        items: The list of word items to print.
+        words: The list of word items to print.
     '''
-    print(' '.join(items))
+    print(' '.join(words))
 
 
 def main(url):
