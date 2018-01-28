@@ -1,10 +1,7 @@
-'''
-    *In a python REPL type...
+'''Fetch and print document text from a url.
 
-    >>> import fetchPrintUrl
-    >>> fetchPrintUrl.fetch()
-
-    *Result will be the content of the request response in concatenated format.
+Usage:
+    python3 fetchBook.py <URL>
 '''
 import sys
 from urllib.request import urlopen
