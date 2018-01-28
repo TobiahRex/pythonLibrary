@@ -18,3 +18,6 @@ def fetch():
 
     *Result will be the content of the request response in concatenated format.
 '''
+
+if __name__ == '__main__':
+    fetch()
