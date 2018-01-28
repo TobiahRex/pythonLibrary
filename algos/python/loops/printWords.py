@@ -1,7 +1,7 @@
-'''Fetch and print document text from a url.
+'''Fetch and print text from a url.
 
 Usage:
-    python3 fetchBook.py <URL>
+    python3 printWords.py <URL>
 '''
 import sys
 from urllib.request import urlopen
@@ -16,13 +16,13 @@ def fetch(url):                                 #'http://sixty-north.com/c/t.txt
         return story_words
 
 
-def print_items(items):
+def print_words(items):
     print(' '.join(items))
 
 
 def main(url):
     words = fetch(url)
-    print_items(words)
+    print_words(words)
 
 
 if __name__ == '__main__':
