@@ -7,15 +7,18 @@ def printBreak(title = '', quantity = 10, lineBreak = '-'):
     if len(title):
         quantity = len(title)
 
-    [lineBreak.append(lineBreak) print(lineBreak) for _ in repeat(None, quantity)]
+    border = ''
+
+    for _ in repeat(None, quantity):
+        border += lineBreak
 
     if (title):
-        print(lineBreak);
+        print('\n' + border);
         print(title)
-        print(lineBreak)
+        print(border + '\n')
     else:
-        print(lineBreak)
-``
+        print(border)
+
 def updateList(k):
     k.append(1)
     print('list: ', k)
@@ -30,5 +33,5 @@ def updateList2(a):
 
 if __name__ == '__main__':
     updateList(m)
-    printBreak()
+    printBreak('BREAK', 20, '*')
     updateList2(m)
