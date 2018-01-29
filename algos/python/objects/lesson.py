@@ -1,11 +1,17 @@
 #!/usr/bin/env python3
 m = [ 5, 3, 8, 2]
 
-def printBreak(title, lineBreak = '-'):
-    for break in len(title):
-        print(lineBreak);
-        print(title)
-        print(lineBreak)
+def printBreak(title = '', quantity = 10, lineBreak = '-'):
+    if len(title):
+        quantity = len(title)
+
+    for _ in repeat(None, quantity) :
+        if (title):
+            print(lineBreak);
+            print(title)
+            print(lineBreak)
+        else:
+            print(lineBreak)
 
 def updateList(k):
     k.append(1)
@@ -21,5 +27,5 @@ def updateList2(a):
 
 if __name__ == '__main__':
     updateList(m)
-    print()
+    printBreak()
     updateList2(m)
