@@ -33,5 +33,5 @@ def updateList2(a):
 
 if __name__ == '__main__':
     updateList(m)
-    printBreak('BREAK', 20, '*')
+    printBreak()
     updateList2(m)
