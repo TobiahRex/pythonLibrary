@@ -9,7 +9,8 @@ def addSpam(food = None):
     if food is None:
         food = []
 
-    return food.append('spam');
+    food.append('spam');
+    print(food);
 
 if __name__ == '__main__':
     times();
