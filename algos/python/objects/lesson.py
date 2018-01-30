@@ -30,7 +30,6 @@ def printBreak(title = '', quantity = 10, lineBreak = '-'):
     else:
         print(border)
 
-
 if __name__ == '__main__':
     # updateList(m)
     printBreak('yo', 50)
