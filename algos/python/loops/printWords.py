@@ -1,4 +1,4 @@
-#!/usr/bin/env Python3
+#!/usr/bin/env python3
 '''Fetch and print text from a url.
 
 Usage:
