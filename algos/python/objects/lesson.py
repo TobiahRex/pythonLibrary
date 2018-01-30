@@ -24,7 +24,7 @@ def printBreak(title = '', quantity = 10, lineBreak = '-'):
         border = lineBreak * quantity
 
     if (title):
-        print('\n' + border);
+        print(border);
         print(title)
         print(border + '\n')
     else:
@@ -33,5 +33,5 @@ def printBreak(title = '', quantity = 10, lineBreak = '-'):
 
 if __name__ == '__main__':
     # updateList(m)
-    printBreak('', 50)
+    printBreak('yo', 50)
     updateList2(m)
