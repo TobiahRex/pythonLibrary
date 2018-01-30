@@ -38,8 +38,8 @@ globalVar = 3
 def redefine():
     globalVar = 5
 
-redefine()
-print(globalVar) # 3
+# redefine()
+# print(globalVar) # 3
 '''
     The redefinition of "globalVar" inside "redefine" does not change the global variable "globalVar" in the module scope.
     Instead, a NEW "globalVar" object reference is created within the Local Scope of the "redefine()" function.
@@ -47,9 +47,9 @@ print(globalVar) # 3
     To re-assign the global variable "globalVar" from within a locally scoped function, the following must be done...
 '''
 
+def show():
+    print(globalVar)
+
 def redefine2():
     global globalVar
-    globaVar = 5
-
-redefine2()
-print(globalVar)
+    globalVar = 5
